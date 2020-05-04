@@ -9,8 +9,8 @@ import org.springframework.web.client.RestTemplate;
 public class GithubClient {
 	private final RestTemplate restTemplate;
 
-	private static final String EVENT_ISSUES_URL = "https://api.github.com/repos/{owner}/{repo}/issues/events";
-
+	//private static final String EVENT_ISSUES_URL = "https://api.github.com/repos/{owner}/{repo}";
+	private static final String EVENT_ISSUES_URL = "https://github.com/nineleaps-training/Om_issues_dashboard";
 	public GithubClient(RestTemplateBuilder builder) {
 
 		this.restTemplate = builder.build();
